@@ -26,7 +26,7 @@ test_size = 0.33
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, label_encoded_y, test_size=test_size, random_state=seed)
 
 
-# fit model no training data
+# fit model on training data
 model = xgboost.XGBClassifier()
 model.fit(X_train, y_train)
 print(model)
